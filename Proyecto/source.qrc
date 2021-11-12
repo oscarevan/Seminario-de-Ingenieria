@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="images">
+    <file>images/puro.png</file>
+    <file>images/madera.png</file>
+    <file>images/background_register.png</file>
+  </qresource>
+  <qresource prefix="prefijoNuevo">
+    <file>images/puro.png</file>
+  </qresource>
+</RCC>

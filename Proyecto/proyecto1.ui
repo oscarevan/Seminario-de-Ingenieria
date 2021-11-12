@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>501</width>
+    <height>651</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_21">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <property name="styleSheet">
+        <string notr="true">
+QWidget
+{background-image: url(:/images/images/madera.png);
+}
+
+QLabel#tabacos{
+color:black;
+font-size:50px;
+font-family: courier new;
+background:none;
+}
+
+QLabel#ornelas{
+color:black;
+font-size:50px;
+font-family: courier new;
+background:none;
+}
+
+QLabel#puro{
+border:none;
+background:none;
+}
+
+QLabel#puro2{
+border:none;
+background:none;
+}
+
+QLabel#puro3{
+border:none;
+background:none;
+}
+
+QLabel#puro4{
+border:none;
+background:none;
+}
+
+QLabel#puro5{
+border:none;
+background:none;
+}
+
+QLabel#puro6{
+border:none;
+background:none;
+}
+
+QLabel#puro7{
+border:none;
+background:none;
+}
+
+QLabel#puro8{
+border:none;
+background:none;
+}
+
+QLabel#puro9{
+border:none;
+background:none;
+}
+
+QLabel#puro10{
+border:none;
+background:none;
+}
+
+QLabel#bienvenido{
+background:none;
+font-size:15px;
+}
+
+QGroupBox#puros{
+border:none;
+background:none;
+}
+
+QGroupBox#puros2{
+border:none;
+background:none;
+}</string>
+       </property>
+       <attribute name="title">
+        <string>Inicio</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_16">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="puros">
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="puro5">
+             <property name="styleSheet">
+              <string notr="true">image: url(:/prefijoNuevo/images/puro.png);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="puro3">
+             <property name="styleSheet">
+              <string notr="true">image: url(:/prefijoNuevo/images/puro.png);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="puro4">
+             <property name="styleSheet">
+              <string notr="true">image: url(:/prefijoNuevo/images/puro.png);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="puro">
+             <property name="styleSheet">
+              <string notr="true">image: url(:/prefijoNuevo/images/puro.png);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="puro2">
+             <property name="styleSheet">
+              <string notr="true">image: url(:/prefijoNuevo/images/puro.png);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="bienvenido">
+          <property name="text">
+           <string>Bienvenido, Administrador</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QGroupBox" name="puros2">
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QLabel" name="puro7">
+             <property name="styleSheet">
+              <string notr="true">image: url(:/prefijoNuevo/images/puro.png);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="puro8">
+             <property name="styleSheet">
+              <string notr="true">image: url(:/prefijoNuevo/images/puro.png);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="puro6">
+             <property name="styleSheet">
+              <string notr="true">image: url(:/prefijoNuevo/images/puro.png);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLabel" name="puro9">
+             <property name="styleSheet">
+              <string notr="true">image: url(:/prefijoNuevo/images/puro.png);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QLabel" name="puro10">
+             <property name="styleSheet">
+              <string notr="true">image: url(:/prefijoNuevo/images/puro.png);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="ornelas">
+          <property name="text">
+           <string>Ornelas</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="tabacos">
+          <property name="text">
+           <string>Tabacos</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Inventario</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_18">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_7">
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="4" column="0" colspan="2">
+            <widget class="QGroupBox" name="groupBox_10">
+             <property name="title">
+              <string>Buscar y Eliminar</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_13">
+              <item row="0" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_buscar_inventario">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Nombre del producto a buscar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QPushButton" name="pushButton_eliminar_inventario">
+                <property name="text">
+                 <string>Eliminar producto</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QPushButton" name="pushButton_buscar_inventario">
+                <property name="text">
+                 <string>Buscar producto</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="0" rowspan="2" colspan="2">
+            <widget class="QTableWidget" name="tableWidget_inventario"/>
+           </item>
+           <item row="3" column="0" colspan="2">
+            <widget class="QPushButton" name="pushButton_ver_inventario">
+             <property name="text">
+              <string>Ver inventario</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QGroupBox" name="groupBox_9">
+             <property name="title">
+              <string>Agregar</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_12">
+              <item row="2" column="0">
+               <widget class="QLineEdit" name="lineEdit_cantidad_inventario">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Cantidad disponible del producto</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_agregar_inventario">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Nombre del producto</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="lineEdit_precio_inventario">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Precio del producto</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0" colspan="2">
+               <widget class="QPushButton" name="pushButton_agregar_inventario">
+                <property name="text">
+                 <string>Agregar producto</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QGroupBox" name="groupBox">
+             <property name="title">
+              <string>Buscar y Modificar</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="2" column="0">
+               <widget class="QLineEdit" name="lineEdit_cantidad_modificar_inventario">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Cantidad del producto a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="lineEdit_precio_modificar_inventario">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Precio del producto a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_agregar_modificar_inventario">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Nombre del producto a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QPushButton" name="pushButton_buscar_modificar_inventario">
+                <property name="text">
+                 <string>Buscar producto</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QPushButton" name="pushButton_modificar_inventario">
+                <property name="text">
+                 <string>Modificar producto</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Pedidos</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_8">
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_11">
+           <item row="0" column="0" colspan="2">
+            <widget class="QTableWidget" name="tableWidget_pedidos"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QGroupBox" name="groupBox_11">
+             <property name="title">
+              <string>Ver</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_14">
+              <item row="0" column="0">
+               <widget class="QLineEdit" name="lineEdit_ver_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Fecha de los pedidos</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QPushButton" name="pushButton_ver_pedidos">
+                <property name="text">
+                 <string>Ver pedidos</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QGroupBox" name="groupBox_13">
+             <property name="title">
+              <string>Buscar y Eliminar</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="3" column="1">
+               <widget class="QPushButton" name="pushButton_eliminar_pedidos">
+                <property name="text">
+                 <string>Eliminar pedido</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_buscar_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Número del pedido a buscar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QPushButton" name="pushButton_buscar_pedidos">
+                <property name="text">
+                 <string>Buscar pedido</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="QGroupBox" name="groupBox_14">
+             <property name="title">
+              <string>Buscar y Modificar</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_17">
+              <item row="1" column="0">
+               <widget class="QLineEdit" name="lineEdit_agregar_modificar_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Nombre del producto pedido a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QLineEdit" name="lineEdit_telefono_cliente_modificar_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Teléfono del cliente a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLineEdit" name="lineEdit_nombre_cliente_modificar_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Nombre del cliente a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLineEdit" name="lineEdit_fecha_modificar_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Fecha del pedido a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="lineEdit_cantidad_modificar_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Cantidad pedida a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="lineEdit_fecha_entrega_modificar_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Fecha de entrega a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QPushButton" name="pushButton_buscar_modificar_pedidos">
+                <property name="text">
+                 <string>Buscar pedido</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QPushButton" name="pushButton_modificar_pedidos">
+                <property name="text">
+                 <string>Modificar pedido</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="2">
+            <widget class="QGroupBox" name="groupBox_12">
+             <property name="title">
+              <string>Agregar</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_15">
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="lineEdit_fecha_entrega_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Fecha de entrega</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0" colspan="2">
+               <widget class="QPushButton" name="pushButton_agregar_pedidos">
+                <property name="text">
+                 <string>Agregar pedido</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLineEdit" name="lineEdit_nombre_cliente_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Nombre del cliente</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLineEdit" name="lineEdit_fecha_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Fecha del pedido</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QLineEdit" name="lineEdit_telefono_cliente_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Teléfono del cliente</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLineEdit" name="lineEdit_agregar_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Nombre del producto pedido</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="lineEdit_cantidad_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Cantidad pedida</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Ventas</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="1" column="1">
+            <widget class="QGroupBox" name="groupBox_4">
+             <property name="title">
+              <string>Ver</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_10">
+              <item row="0" column="0">
+               <widget class="QLineEdit" name="lineEdit_ver_ventas">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Fecha del día de las ventas</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QPushButton" name="pushButton_ver_total_ventas">
+                <property name="text">
+                 <string>Ver total</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QPushButton" name="pushButton_ver_ventas">
+                <property name="text">
+                 <string>Ver ventas</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QGroupBox" name="groupBox_5">
+             <property name="title">
+              <string>Buscar y Eliminar</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="1" column="3">
+               <widget class="QPushButton" name="pushButton_eliminar_ventas">
+                <property name="text">
+                 <string>Eliminar venta</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1" colspan="2">
+               <widget class="QPushButton" name="pushButton_buscar_ventas">
+                <property name="text">
+                 <string>Buscar venta</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1" colspan="3">
+               <widget class="QLineEdit" name="lineEdit_buscar_ventas">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Número de la venta a buscar</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="3">
+            <widget class="QTableWidget" name="tableWidget_ventas"/>
+           </item>
+           <item row="4" column="0" colspan="3">
+            <widget class="QGroupBox" name="groupBox_15">
+             <property name="title">
+              <string>Buscar y Modificar</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_20">
+              <item row="2" column="0">
+               <widget class="QLineEdit" name="lineEdit_cantidad_modificar_ventas">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Cantidad vendida a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_agregar_modificar_ventas">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Producto de la venta a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="lineEdit_fecha_modificar_ventas">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Fecha de la venta a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QPushButton" name="pushButton_modificar_ventas">
+                <property name="text">
+                 <string>Modificar venta</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QPushButton" name="pushButton_buscar_modificar_ventas">
+                <property name="text">
+                 <string>Buscar venta</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="5" column="0" colspan="3">
+            <widget class="QGroupBox" name="groupBox_6">
+             <property name="title">
+              <string>Agregar</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="2" column="0">
+               <widget class="QLineEdit" name="lineEdit_cantidad_ventas">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Cantidad vendida</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_agregar_ventas">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Nombre del producto vendido</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="lineEdit_fecha_ventas">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Fecha de la venta</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0" colspan="2">
+               <widget class="QPushButton" name="pushButton_agregar_ventas">
+                <property name="text">
+                 <string>Agregar venta</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>501</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAgregar_productos">
+   <property name="text">
+    <string>Agregar productos</string>
+   </property>
+  </action>
+  <action name="actionVer_inventario">
+   <property name="text">
+    <string>Ver inventario</string>
+   </property>
+  </action>
+  <action name="actionModificar_datos">
+   <property name="text">
+    <string>Modificar datos</string>
+   </property>
+  </action>
+  <action name="actionBuscar_productos">
+   <property name="text">
+    <string>Buscar productos</string>
+   </property>
+  </action>
+  <action name="actionEliminar_productos">
+   <property name="text">
+    <string>Eliminar productos</string>
+   </property>
+  </action>
+  <action name="actionAgregar_pedidos">
+   <property name="text">
+    <string>Agregar pedidos</string>
+   </property>
+  </action>
+  <action name="actionVer_pedidos">
+   <property name="text">
+    <string>Ver pedidos</string>
+   </property>
+  </action>
+  <action name="actionModificar_pedidos">
+   <property name="text">
+    <string>Modificar pedidos</string>
+   </property>
+  </action>
+  <action name="actionBuscar_pedidos">
+   <property name="text">
+    <string>Buscar pedidos</string>
+   </property>
+  </action>
+  <action name="actionEliminar_pedidos">
+   <property name="text">
+    <string>Eliminar pedidos</string>
+   </property>
+  </action>
+  <action name="actionAgregar_ventas">
+   <property name="text">
+    <string>Agregar ventas</string>
+   </property>
+  </action>
+  <action name="actionVer_ventas">
+   <property name="text">
+    <string>Ver ventas</string>
+   </property>
+  </action>
+  <action name="actionBuscar_ventas">
+   <property name="text">
+    <string>Buscar ventas</string>
+   </property>
+  </action>
+  <action name="actionCalcular_total">
+   <property name="text">
+    <string>Calcular total</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="source.qrc"/>
+ </resources>
+ <connections/>
+</ui>
