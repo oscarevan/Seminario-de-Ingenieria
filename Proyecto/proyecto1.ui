@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>501</width>
+    <width>649</width>
     <height>651</height>
    </rect>
   </property>
@@ -15,7 +15,7 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_21">
-    <item row="0" column="0">
+    <item row="0" column="1">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
        <number>0</number>
@@ -271,6 +271,69 @@ background:none;
            <string/>
           </property>
           <layout class="QGridLayout" name="gridLayout_9">
+           <item row="5" column="0">
+            <widget class="QGroupBox" name="groupBox">
+             <property name="title">
+              <string>Buscar y Modificar</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="2" column="0" colspan="2">
+               <widget class="QPushButton" name="pushButton_buscar_modificar_inventario">
+                <property name="text">
+                 <string>Buscar producto</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLineEdit" name="lineEdit_cantidad_modificar_inventario">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Cantidad del producto a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QLineEdit" name="lineEdit_precio_modificar_inventario">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Precio del producto a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0" colspan="2">
+               <widget class="QPushButton" name="pushButton_modificar_inventario">
+                <property name="text">
+                 <string>Modificar producto</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_agregar_modificar_inventario">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Nombre del producto a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_buscar_modificar_inventario">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Nombre del producto a buscar</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
            <item row="4" column="0" colspan="2">
             <widget class="QGroupBox" name="groupBox_10">
              <property name="title">
@@ -303,9 +366,6 @@ background:none;
               </item>
              </layout>
             </widget>
-           </item>
-           <item row="0" column="0" rowspan="2" colspan="2">
-            <widget class="QTableWidget" name="tableWidget_inventario"/>
            </item>
            <item row="3" column="0" colspan="2">
             <widget class="QPushButton" name="pushButton_ver_inventario">
@@ -360,57 +420,20 @@ background:none;
              </layout>
             </widget>
            </item>
-           <item row="5" column="0">
-            <widget class="QGroupBox" name="groupBox">
-             <property name="title">
-              <string>Buscar y Modificar</string>
+           <item row="0" column="0" rowspan="2" colspan="2">
+            <widget class="QTableWidget" name="tableWidget_inventario">
+             <property name="lineWidth">
+              <number>1</number>
              </property>
-             <layout class="QGridLayout" name="gridLayout">
-              <item row="2" column="0">
-               <widget class="QLineEdit" name="lineEdit_cantidad_modificar_inventario">
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="placeholderText">
-                 <string>Cantidad del producto a modificar</string>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="1">
-               <widget class="QLineEdit" name="lineEdit_precio_modificar_inventario">
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="placeholderText">
-                 <string>Precio del producto a modificar</string>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="0" colspan="2">
-               <widget class="QLineEdit" name="lineEdit_agregar_modificar_inventario">
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="placeholderText">
-                 <string>Nombre del producto a modificar</string>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="0">
-               <widget class="QPushButton" name="pushButton_buscar_modificar_inventario">
-                <property name="text">
-                 <string>Buscar producto</string>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="1">
-               <widget class="QPushButton" name="pushButton_modificar_inventario">
-                <property name="text">
-                 <string>Modificar producto</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
+             <property name="sizeAdjustPolicy">
+              <enum>QAbstractScrollArea::AdjustToContents</enum>
+             </property>
+             <property name="alternatingRowColors">
+              <bool>true</bool>
+             </property>
+             <attribute name="horizontalHeaderDefaultSectionSize">
+              <number>140</number>
+             </attribute>
             </widget>
            </item>
           </layout>
@@ -430,7 +453,14 @@ background:none;
           </property>
           <layout class="QGridLayout" name="gridLayout_11">
            <item row="0" column="0" colspan="2">
-            <widget class="QTableWidget" name="tableWidget_pedidos"/>
+            <widget class="QTableWidget" name="tableWidget_pedidos">
+             <property name="alternatingRowColors">
+              <bool>true</bool>
+             </property>
+             <attribute name="horizontalHeaderDefaultSectionSize">
+              <number>170</number>
+             </attribute>
+            </widget>
            </item>
            <item row="1" column="0">
             <widget class="QGroupBox" name="groupBox_11">
@@ -444,7 +474,7 @@ background:none;
                  <set>Qt::AlignCenter</set>
                 </property>
                 <property name="placeholderText">
-                 <string>Fecha de los pedidos</string>
+                 <string>Fecha de entrega de los pedidos (dd/mm/aaaa)</string>
                 </property>
                </widget>
               </item>
@@ -497,37 +527,7 @@ background:none;
               <string>Buscar y Modificar</string>
              </property>
              <layout class="QGridLayout" name="gridLayout_17">
-              <item row="1" column="0">
-               <widget class="QLineEdit" name="lineEdit_agregar_modificar_pedidos">
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="placeholderText">
-                 <string>Nombre del producto pedido a modificar</string>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="1">
-               <widget class="QLineEdit" name="lineEdit_telefono_cliente_modificar_pedidos">
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="placeholderText">
-                 <string>Teléfono del cliente a modificar</string>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="0">
-               <widget class="QLineEdit" name="lineEdit_nombre_cliente_modificar_pedidos">
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="placeholderText">
-                 <string>Nombre del cliente a modificar</string>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="0">
+              <item row="4" column="0">
                <widget class="QLineEdit" name="lineEdit_fecha_modificar_pedidos">
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -537,17 +537,17 @@ background:none;
                 </property>
                </widget>
               </item>
-              <item row="1" column="1">
-               <widget class="QLineEdit" name="lineEdit_cantidad_modificar_pedidos">
+              <item row="5" column="0">
+               <widget class="QLineEdit" name="lineEdit_nombre_cliente_modificar_pedidos">
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
                 </property>
                 <property name="placeholderText">
-                 <string>Cantidad pedida a modificar</string>
+                 <string>Nombre del cliente a modificar</string>
                 </property>
                </widget>
               </item>
-              <item row="2" column="1">
+              <item row="4" column="1">
                <widget class="QLineEdit" name="lineEdit_fecha_entrega_modificar_pedidos">
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -557,17 +557,57 @@ background:none;
                 </property>
                </widget>
               </item>
-              <item row="4" column="0">
+              <item row="5" column="1">
+               <widget class="QLineEdit" name="lineEdit_telefono_cliente_modificar_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Teléfono del cliente a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
                <widget class="QPushButton" name="pushButton_buscar_modificar_pedidos">
                 <property name="text">
                  <string>Buscar pedido</string>
                 </property>
                </widget>
               </item>
-              <item row="4" column="1">
+              <item row="6" column="0" colspan="2">
                <widget class="QPushButton" name="pushButton_modificar_pedidos">
                 <property name="text">
                  <string>Modificar pedido</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QLineEdit" name="lineEdit_cantidad_modificar_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Cantidad pedida a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLineEdit" name="lineEdit_agregar_modificar_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Nombre del producto pedido a modificar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_buscar_modificar_pedidos">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Número del pedido a buscar</string>
                 </property>
                </widget>
               </item>
@@ -586,7 +626,7 @@ background:none;
                  <set>Qt::AlignCenter</set>
                 </property>
                 <property name="placeholderText">
-                 <string>Fecha de entrega</string>
+                 <string>Fecha de entrega (dd/mm/aaaa)</string>
                 </property>
                </widget>
               </item>
@@ -613,7 +653,7 @@ background:none;
                  <set>Qt::AlignCenter</set>
                 </property>
                 <property name="placeholderText">
-                 <string>Fecha del pedido</string>
+                 <string>Fecha del pedido (dd/mm/aaaa)</string>
                 </property>
                </widget>
               </item>
@@ -678,7 +718,7 @@ background:none;
                  <set>Qt::AlignCenter</set>
                 </property>
                 <property name="placeholderText">
-                 <string>Fecha del día de las ventas</string>
+                 <string>Fecha del día de las ventas (dd/mm/aaaa)</string>
                 </property>
                </widget>
               </item>
@@ -733,7 +773,14 @@ background:none;
             </widget>
            </item>
            <item row="0" column="0" colspan="3">
-            <widget class="QTableWidget" name="tableWidget_ventas"/>
+            <widget class="QTableWidget" name="tableWidget_ventas">
+             <property name="alternatingRowColors">
+              <bool>true</bool>
+             </property>
+             <attribute name="horizontalHeaderDefaultSectionSize">
+              <number>150</number>
+             </attribute>
+            </widget>
            </item>
            <item row="4" column="0" colspan="3">
             <widget class="QGroupBox" name="groupBox_15">
@@ -741,7 +788,17 @@ background:none;
               <string>Buscar y Modificar</string>
              </property>
              <layout class="QGridLayout" name="gridLayout_20">
-              <item row="2" column="0">
+              <item row="3" column="1">
+               <widget class="QLineEdit" name="lineEdit_fecha_modificar_ventas">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Fecha de la venta a modificar (dd/mm/aaaa)</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
                <widget class="QLineEdit" name="lineEdit_cantidad_modificar_ventas">
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -751,7 +808,7 @@ background:none;
                 </property>
                </widget>
               </item>
-              <item row="1" column="0" colspan="2">
+              <item row="2" column="0" colspan="2">
                <widget class="QLineEdit" name="lineEdit_agregar_modificar_ventas">
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -761,27 +818,27 @@ background:none;
                 </property>
                </widget>
               </item>
-              <item row="2" column="1">
-               <widget class="QLineEdit" name="lineEdit_fecha_modificar_ventas">
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="placeholderText">
-                 <string>Fecha de la venta a modificar</string>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="1">
+              <item row="4" column="0" colspan="2">
                <widget class="QPushButton" name="pushButton_modificar_ventas">
                 <property name="text">
                  <string>Modificar venta</string>
                 </property>
                </widget>
               </item>
-              <item row="3" column="0">
+              <item row="1" column="0" colspan="2">
                <widget class="QPushButton" name="pushButton_buscar_modificar_ventas">
                 <property name="text">
                  <string>Buscar venta</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_buscar_modificar_ventas">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Número de la venta a buscar</string>
                 </property>
                </widget>
               </item>
@@ -820,7 +877,7 @@ background:none;
                  <set>Qt::AlignCenter</set>
                 </property>
                 <property name="placeholderText">
-                 <string>Fecha de la venta</string>
+                 <string>Fecha de la venta (dd/mm/aaaa)</string>
                 </property>
                </widget>
               </item>
@@ -848,7 +905,7 @@ background:none;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>501</width>
+     <width>649</width>
      <height>21</height>
     </rect>
    </property>

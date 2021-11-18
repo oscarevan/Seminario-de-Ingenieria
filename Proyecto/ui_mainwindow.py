@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(501, 651)
+        MainWindow.resize(649, 651)
         self.actionAgregar_productos = QAction(MainWindow)
         self.actionAgregar_productos.setObjectName(u"actionAgregar_productos")
         self.actionVer_inventario = QAction(MainWindow)
@@ -242,6 +242,47 @@ class Ui_MainWindow(object):
         self.groupBox_7.setObjectName(u"groupBox_7")
         self.gridLayout_9 = QGridLayout(self.groupBox_7)
         self.gridLayout_9.setObjectName(u"gridLayout_9")
+        self.groupBox = QGroupBox(self.groupBox_7)
+        self.groupBox.setObjectName(u"groupBox")
+        self.gridLayout = QGridLayout(self.groupBox)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.pushButton_buscar_modificar_inventario = QPushButton(self.groupBox)
+        self.pushButton_buscar_modificar_inventario.setObjectName(u"pushButton_buscar_modificar_inventario")
+
+        self.gridLayout.addWidget(self.pushButton_buscar_modificar_inventario, 2, 0, 1, 2)
+
+        self.lineEdit_cantidad_modificar_inventario = QLineEdit(self.groupBox)
+        self.lineEdit_cantidad_modificar_inventario.setObjectName(u"lineEdit_cantidad_modificar_inventario")
+        self.lineEdit_cantidad_modificar_inventario.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout.addWidget(self.lineEdit_cantidad_modificar_inventario, 4, 0, 1, 1)
+
+        self.lineEdit_precio_modificar_inventario = QLineEdit(self.groupBox)
+        self.lineEdit_precio_modificar_inventario.setObjectName(u"lineEdit_precio_modificar_inventario")
+        self.lineEdit_precio_modificar_inventario.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout.addWidget(self.lineEdit_precio_modificar_inventario, 4, 1, 1, 1)
+
+        self.pushButton_modificar_inventario = QPushButton(self.groupBox)
+        self.pushButton_modificar_inventario.setObjectName(u"pushButton_modificar_inventario")
+
+        self.gridLayout.addWidget(self.pushButton_modificar_inventario, 5, 0, 1, 2)
+
+        self.lineEdit_agregar_modificar_inventario = QLineEdit(self.groupBox)
+        self.lineEdit_agregar_modificar_inventario.setObjectName(u"lineEdit_agregar_modificar_inventario")
+        self.lineEdit_agregar_modificar_inventario.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout.addWidget(self.lineEdit_agregar_modificar_inventario, 3, 0, 1, 2)
+
+        self.lineEdit_buscar_modificar_inventario = QLineEdit(self.groupBox)
+        self.lineEdit_buscar_modificar_inventario.setObjectName(u"lineEdit_buscar_modificar_inventario")
+        self.lineEdit_buscar_modificar_inventario.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout.addWidget(self.lineEdit_buscar_modificar_inventario, 1, 0, 1, 2)
+
+
+        self.gridLayout_9.addWidget(self.groupBox, 5, 0, 1, 1)
+
         self.groupBox_10 = QGroupBox(self.groupBox_7)
         self.groupBox_10.setObjectName(u"groupBox_10")
         self.gridLayout_13 = QGridLayout(self.groupBox_10)
@@ -264,11 +305,6 @@ class Ui_MainWindow(object):
 
 
         self.gridLayout_9.addWidget(self.groupBox_10, 4, 0, 1, 2)
-
-        self.tableWidget_inventario = QTableWidget(self.groupBox_7)
-        self.tableWidget_inventario.setObjectName(u"tableWidget_inventario")
-
-        self.gridLayout_9.addWidget(self.tableWidget_inventario, 0, 0, 2, 2)
 
         self.pushButton_ver_inventario = QPushButton(self.groupBox_7)
         self.pushButton_ver_inventario.setObjectName(u"pushButton_ver_inventario")
@@ -305,40 +341,14 @@ class Ui_MainWindow(object):
 
         self.gridLayout_9.addWidget(self.groupBox_9, 6, 0, 1, 1)
 
-        self.groupBox = QGroupBox(self.groupBox_7)
-        self.groupBox.setObjectName(u"groupBox")
-        self.gridLayout = QGridLayout(self.groupBox)
-        self.gridLayout.setObjectName(u"gridLayout")
-        self.lineEdit_cantidad_modificar_inventario = QLineEdit(self.groupBox)
-        self.lineEdit_cantidad_modificar_inventario.setObjectName(u"lineEdit_cantidad_modificar_inventario")
-        self.lineEdit_cantidad_modificar_inventario.setAlignment(Qt.AlignCenter)
+        self.tableWidget_inventario = QTableWidget(self.groupBox_7)
+        self.tableWidget_inventario.setObjectName(u"tableWidget_inventario")
+        self.tableWidget_inventario.setLineWidth(1)
+        self.tableWidget_inventario.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
+        self.tableWidget_inventario.setAlternatingRowColors(True)
+        self.tableWidget_inventario.horizontalHeader().setDefaultSectionSize(140)
 
-        self.gridLayout.addWidget(self.lineEdit_cantidad_modificar_inventario, 2, 0, 1, 1)
-
-        self.lineEdit_precio_modificar_inventario = QLineEdit(self.groupBox)
-        self.lineEdit_precio_modificar_inventario.setObjectName(u"lineEdit_precio_modificar_inventario")
-        self.lineEdit_precio_modificar_inventario.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout.addWidget(self.lineEdit_precio_modificar_inventario, 2, 1, 1, 1)
-
-        self.lineEdit_agregar_modificar_inventario = QLineEdit(self.groupBox)
-        self.lineEdit_agregar_modificar_inventario.setObjectName(u"lineEdit_agregar_modificar_inventario")
-        self.lineEdit_agregar_modificar_inventario.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout.addWidget(self.lineEdit_agregar_modificar_inventario, 1, 0, 1, 2)
-
-        self.pushButton_buscar_modificar_inventario = QPushButton(self.groupBox)
-        self.pushButton_buscar_modificar_inventario.setObjectName(u"pushButton_buscar_modificar_inventario")
-
-        self.gridLayout.addWidget(self.pushButton_buscar_modificar_inventario, 3, 0, 1, 1)
-
-        self.pushButton_modificar_inventario = QPushButton(self.groupBox)
-        self.pushButton_modificar_inventario.setObjectName(u"pushButton_modificar_inventario")
-
-        self.gridLayout.addWidget(self.pushButton_modificar_inventario, 3, 1, 1, 1)
-
-
-        self.gridLayout_9.addWidget(self.groupBox, 5, 0, 1, 1)
+        self.gridLayout_9.addWidget(self.tableWidget_inventario, 0, 0, 2, 2)
 
 
         self.gridLayout_18.addWidget(self.groupBox_7, 0, 0, 1, 1)
@@ -354,6 +364,8 @@ class Ui_MainWindow(object):
         self.gridLayout_11.setObjectName(u"gridLayout_11")
         self.tableWidget_pedidos = QTableWidget(self.groupBox_8)
         self.tableWidget_pedidos.setObjectName(u"tableWidget_pedidos")
+        self.tableWidget_pedidos.setAlternatingRowColors(True)
+        self.tableWidget_pedidos.horizontalHeader().setDefaultSectionSize(170)
 
         self.gridLayout_11.addWidget(self.tableWidget_pedidos, 0, 0, 1, 2)
 
@@ -402,51 +414,57 @@ class Ui_MainWindow(object):
         self.groupBox_14.setObjectName(u"groupBox_14")
         self.gridLayout_17 = QGridLayout(self.groupBox_14)
         self.gridLayout_17.setObjectName(u"gridLayout_17")
-        self.lineEdit_agregar_modificar_pedidos = QLineEdit(self.groupBox_14)
-        self.lineEdit_agregar_modificar_pedidos.setObjectName(u"lineEdit_agregar_modificar_pedidos")
-        self.lineEdit_agregar_modificar_pedidos.setAlignment(Qt.AlignCenter)
+        self.lineEdit_fecha_modificar_pedidos = QLineEdit(self.groupBox_14)
+        self.lineEdit_fecha_modificar_pedidos.setObjectName(u"lineEdit_fecha_modificar_pedidos")
+        self.lineEdit_fecha_modificar_pedidos.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_17.addWidget(self.lineEdit_agregar_modificar_pedidos, 1, 0, 1, 1)
-
-        self.lineEdit_telefono_cliente_modificar_pedidos = QLineEdit(self.groupBox_14)
-        self.lineEdit_telefono_cliente_modificar_pedidos.setObjectName(u"lineEdit_telefono_cliente_modificar_pedidos")
-        self.lineEdit_telefono_cliente_modificar_pedidos.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_17.addWidget(self.lineEdit_telefono_cliente_modificar_pedidos, 3, 1, 1, 1)
+        self.gridLayout_17.addWidget(self.lineEdit_fecha_modificar_pedidos, 4, 0, 1, 1)
 
         self.lineEdit_nombre_cliente_modificar_pedidos = QLineEdit(self.groupBox_14)
         self.lineEdit_nombre_cliente_modificar_pedidos.setObjectName(u"lineEdit_nombre_cliente_modificar_pedidos")
         self.lineEdit_nombre_cliente_modificar_pedidos.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_17.addWidget(self.lineEdit_nombre_cliente_modificar_pedidos, 3, 0, 1, 1)
-
-        self.lineEdit_fecha_modificar_pedidos = QLineEdit(self.groupBox_14)
-        self.lineEdit_fecha_modificar_pedidos.setObjectName(u"lineEdit_fecha_modificar_pedidos")
-        self.lineEdit_fecha_modificar_pedidos.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_17.addWidget(self.lineEdit_fecha_modificar_pedidos, 2, 0, 1, 1)
-
-        self.lineEdit_cantidad_modificar_pedidos = QLineEdit(self.groupBox_14)
-        self.lineEdit_cantidad_modificar_pedidos.setObjectName(u"lineEdit_cantidad_modificar_pedidos")
-        self.lineEdit_cantidad_modificar_pedidos.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_17.addWidget(self.lineEdit_cantidad_modificar_pedidos, 1, 1, 1, 1)
+        self.gridLayout_17.addWidget(self.lineEdit_nombre_cliente_modificar_pedidos, 5, 0, 1, 1)
 
         self.lineEdit_fecha_entrega_modificar_pedidos = QLineEdit(self.groupBox_14)
         self.lineEdit_fecha_entrega_modificar_pedidos.setObjectName(u"lineEdit_fecha_entrega_modificar_pedidos")
         self.lineEdit_fecha_entrega_modificar_pedidos.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_17.addWidget(self.lineEdit_fecha_entrega_modificar_pedidos, 2, 1, 1, 1)
+        self.gridLayout_17.addWidget(self.lineEdit_fecha_entrega_modificar_pedidos, 4, 1, 1, 1)
+
+        self.lineEdit_telefono_cliente_modificar_pedidos = QLineEdit(self.groupBox_14)
+        self.lineEdit_telefono_cliente_modificar_pedidos.setObjectName(u"lineEdit_telefono_cliente_modificar_pedidos")
+        self.lineEdit_telefono_cliente_modificar_pedidos.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_17.addWidget(self.lineEdit_telefono_cliente_modificar_pedidos, 5, 1, 1, 1)
 
         self.pushButton_buscar_modificar_pedidos = QPushButton(self.groupBox_14)
         self.pushButton_buscar_modificar_pedidos.setObjectName(u"pushButton_buscar_modificar_pedidos")
 
-        self.gridLayout_17.addWidget(self.pushButton_buscar_modificar_pedidos, 4, 0, 1, 1)
+        self.gridLayout_17.addWidget(self.pushButton_buscar_modificar_pedidos, 1, 0, 1, 2)
 
         self.pushButton_modificar_pedidos = QPushButton(self.groupBox_14)
         self.pushButton_modificar_pedidos.setObjectName(u"pushButton_modificar_pedidos")
 
-        self.gridLayout_17.addWidget(self.pushButton_modificar_pedidos, 4, 1, 1, 1)
+        self.gridLayout_17.addWidget(self.pushButton_modificar_pedidos, 6, 0, 1, 2)
+
+        self.lineEdit_cantidad_modificar_pedidos = QLineEdit(self.groupBox_14)
+        self.lineEdit_cantidad_modificar_pedidos.setObjectName(u"lineEdit_cantidad_modificar_pedidos")
+        self.lineEdit_cantidad_modificar_pedidos.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_17.addWidget(self.lineEdit_cantidad_modificar_pedidos, 3, 1, 1, 1)
+
+        self.lineEdit_agregar_modificar_pedidos = QLineEdit(self.groupBox_14)
+        self.lineEdit_agregar_modificar_pedidos.setObjectName(u"lineEdit_agregar_modificar_pedidos")
+        self.lineEdit_agregar_modificar_pedidos.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_17.addWidget(self.lineEdit_agregar_modificar_pedidos, 3, 0, 1, 1)
+
+        self.lineEdit_buscar_modificar_pedidos = QLineEdit(self.groupBox_14)
+        self.lineEdit_buscar_modificar_pedidos.setObjectName(u"lineEdit_buscar_modificar_pedidos")
+        self.lineEdit_buscar_modificar_pedidos.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_17.addWidget(self.lineEdit_buscar_modificar_pedidos, 0, 0, 1, 2)
 
 
         self.gridLayout_11.addWidget(self.groupBox_14, 2, 0, 1, 2)
@@ -559,6 +577,8 @@ class Ui_MainWindow(object):
 
         self.tableWidget_ventas = QTableWidget(self.groupBox_3)
         self.tableWidget_ventas.setObjectName(u"tableWidget_ventas")
+        self.tableWidget_ventas.setAlternatingRowColors(True)
+        self.tableWidget_ventas.horizontalHeader().setDefaultSectionSize(150)
 
         self.gridLayout_7.addWidget(self.tableWidget_ventas, 0, 0, 1, 3)
 
@@ -566,33 +586,39 @@ class Ui_MainWindow(object):
         self.groupBox_15.setObjectName(u"groupBox_15")
         self.gridLayout_20 = QGridLayout(self.groupBox_15)
         self.gridLayout_20.setObjectName(u"gridLayout_20")
+        self.lineEdit_fecha_modificar_ventas = QLineEdit(self.groupBox_15)
+        self.lineEdit_fecha_modificar_ventas.setObjectName(u"lineEdit_fecha_modificar_ventas")
+        self.lineEdit_fecha_modificar_ventas.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_20.addWidget(self.lineEdit_fecha_modificar_ventas, 3, 1, 1, 1)
+
         self.lineEdit_cantidad_modificar_ventas = QLineEdit(self.groupBox_15)
         self.lineEdit_cantidad_modificar_ventas.setObjectName(u"lineEdit_cantidad_modificar_ventas")
         self.lineEdit_cantidad_modificar_ventas.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_20.addWidget(self.lineEdit_cantidad_modificar_ventas, 2, 0, 1, 1)
+        self.gridLayout_20.addWidget(self.lineEdit_cantidad_modificar_ventas, 3, 0, 1, 1)
 
         self.lineEdit_agregar_modificar_ventas = QLineEdit(self.groupBox_15)
         self.lineEdit_agregar_modificar_ventas.setObjectName(u"lineEdit_agregar_modificar_ventas")
         self.lineEdit_agregar_modificar_ventas.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout_20.addWidget(self.lineEdit_agregar_modificar_ventas, 1, 0, 1, 2)
-
-        self.lineEdit_fecha_modificar_ventas = QLineEdit(self.groupBox_15)
-        self.lineEdit_fecha_modificar_ventas.setObjectName(u"lineEdit_fecha_modificar_ventas")
-        self.lineEdit_fecha_modificar_ventas.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_20.addWidget(self.lineEdit_fecha_modificar_ventas, 2, 1, 1, 1)
+        self.gridLayout_20.addWidget(self.lineEdit_agregar_modificar_ventas, 2, 0, 1, 2)
 
         self.pushButton_modificar_ventas = QPushButton(self.groupBox_15)
         self.pushButton_modificar_ventas.setObjectName(u"pushButton_modificar_ventas")
 
-        self.gridLayout_20.addWidget(self.pushButton_modificar_ventas, 3, 1, 1, 1)
+        self.gridLayout_20.addWidget(self.pushButton_modificar_ventas, 4, 0, 1, 2)
 
         self.pushButton_buscar_modificar_ventas = QPushButton(self.groupBox_15)
         self.pushButton_buscar_modificar_ventas.setObjectName(u"pushButton_buscar_modificar_ventas")
 
-        self.gridLayout_20.addWidget(self.pushButton_buscar_modificar_ventas, 3, 0, 1, 1)
+        self.gridLayout_20.addWidget(self.pushButton_buscar_modificar_ventas, 1, 0, 1, 2)
+
+        self.lineEdit_buscar_modificar_ventas = QLineEdit(self.groupBox_15)
+        self.lineEdit_buscar_modificar_ventas.setObjectName(u"lineEdit_buscar_modificar_ventas")
+        self.lineEdit_buscar_modificar_ventas.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_20.addWidget(self.lineEdit_buscar_modificar_ventas, 0, 0, 1, 2)
 
 
         self.gridLayout_7.addWidget(self.groupBox_15, 4, 0, 1, 3)
@@ -632,12 +658,12 @@ class Ui_MainWindow(object):
 
         self.tabWidget.addTab(self.tab_4, "")
 
-        self.gridLayout_21.addWidget(self.tabWidget, 0, 0, 1, 1)
+        self.gridLayout_21.addWidget(self.tabWidget, 0, 1, 1, 1)
 
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 501, 21))
+        self.menubar.setGeometry(QRect(0, 0, 649, 21))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -684,6 +710,13 @@ class Ui_MainWindow(object):
         self.tabacos.setText(QCoreApplication.translate("MainWindow", u"Tabacos", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"Inicio", None))
         self.groupBox_7.setTitle("")
+        self.groupBox.setTitle(QCoreApplication.translate("MainWindow", u"Buscar y Modificar", None))
+        self.pushButton_buscar_modificar_inventario.setText(QCoreApplication.translate("MainWindow", u"Buscar producto", None))
+        self.lineEdit_cantidad_modificar_inventario.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Cantidad del producto a modificar", None))
+        self.lineEdit_precio_modificar_inventario.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Precio del producto a modificar", None))
+        self.pushButton_modificar_inventario.setText(QCoreApplication.translate("MainWindow", u"Modificar producto", None))
+        self.lineEdit_agregar_modificar_inventario.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Nombre del producto a modificar", None))
+        self.lineEdit_buscar_modificar_inventario.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Nombre del producto a buscar", None))
         self.groupBox_10.setTitle(QCoreApplication.translate("MainWindow", u"Buscar y Eliminar", None))
         self.lineEdit_buscar_inventario.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Nombre del producto a buscar", None))
         self.pushButton_eliminar_inventario.setText(QCoreApplication.translate("MainWindow", u"Eliminar producto", None))
@@ -694,42 +727,37 @@ class Ui_MainWindow(object):
         self.lineEdit_agregar_inventario.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Nombre del producto", None))
         self.lineEdit_precio_inventario.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Precio del producto", None))
         self.pushButton_agregar_inventario.setText(QCoreApplication.translate("MainWindow", u"Agregar producto", None))
-        self.groupBox.setTitle(QCoreApplication.translate("MainWindow", u"Buscar y Modificar", None))
-        self.lineEdit_cantidad_modificar_inventario.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Cantidad del producto a modificar", None))
-        self.lineEdit_precio_modificar_inventario.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Precio del producto a modificar", None))
-        self.lineEdit_agregar_modificar_inventario.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Nombre del producto a modificar", None))
-        self.pushButton_buscar_modificar_inventario.setText(QCoreApplication.translate("MainWindow", u"Buscar producto", None))
-        self.pushButton_modificar_inventario.setText(QCoreApplication.translate("MainWindow", u"Modificar producto", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"Inventario", None))
         self.groupBox_8.setTitle("")
         self.groupBox_11.setTitle(QCoreApplication.translate("MainWindow", u"Ver", None))
-        self.lineEdit_ver_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Fecha de los pedidos", None))
+        self.lineEdit_ver_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Fecha de entrega de los pedidos (dd/mm/aaaa)", None))
         self.pushButton_ver_pedidos.setText(QCoreApplication.translate("MainWindow", u"Ver pedidos", None))
         self.groupBox_13.setTitle(QCoreApplication.translate("MainWindow", u"Buscar y Eliminar", None))
         self.pushButton_eliminar_pedidos.setText(QCoreApplication.translate("MainWindow", u"Eliminar pedido", None))
         self.lineEdit_buscar_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"N\u00famero del pedido a buscar", None))
         self.pushButton_buscar_pedidos.setText(QCoreApplication.translate("MainWindow", u"Buscar pedido", None))
         self.groupBox_14.setTitle(QCoreApplication.translate("MainWindow", u"Buscar y Modificar", None))
-        self.lineEdit_agregar_modificar_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Nombre del producto pedido a modificar", None))
-        self.lineEdit_telefono_cliente_modificar_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Tel\u00e9fono del cliente a modificar", None))
-        self.lineEdit_nombre_cliente_modificar_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Nombre del cliente a modificar", None))
         self.lineEdit_fecha_modificar_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Fecha del pedido a modificar", None))
-        self.lineEdit_cantidad_modificar_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Cantidad pedida a modificar", None))
+        self.lineEdit_nombre_cliente_modificar_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Nombre del cliente a modificar", None))
         self.lineEdit_fecha_entrega_modificar_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Fecha de entrega a modificar", None))
+        self.lineEdit_telefono_cliente_modificar_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Tel\u00e9fono del cliente a modificar", None))
         self.pushButton_buscar_modificar_pedidos.setText(QCoreApplication.translate("MainWindow", u"Buscar pedido", None))
         self.pushButton_modificar_pedidos.setText(QCoreApplication.translate("MainWindow", u"Modificar pedido", None))
+        self.lineEdit_cantidad_modificar_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Cantidad pedida a modificar", None))
+        self.lineEdit_agregar_modificar_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Nombre del producto pedido a modificar", None))
+        self.lineEdit_buscar_modificar_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"N\u00famero del pedido a buscar", None))
         self.groupBox_12.setTitle(QCoreApplication.translate("MainWindow", u"Agregar", None))
-        self.lineEdit_fecha_entrega_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Fecha de entrega", None))
+        self.lineEdit_fecha_entrega_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Fecha de entrega (dd/mm/aaaa)", None))
         self.pushButton_agregar_pedidos.setText(QCoreApplication.translate("MainWindow", u"Agregar pedido", None))
         self.lineEdit_nombre_cliente_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Nombre del cliente", None))
-        self.lineEdit_fecha_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Fecha del pedido", None))
+        self.lineEdit_fecha_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Fecha del pedido (dd/mm/aaaa)", None))
         self.lineEdit_telefono_cliente_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Tel\u00e9fono del cliente", None))
         self.lineEdit_agregar_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Nombre del producto pedido", None))
         self.lineEdit_cantidad_pedidos.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Cantidad pedida", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), QCoreApplication.translate("MainWindow", u"Pedidos", None))
         self.groupBox_3.setTitle("")
         self.groupBox_4.setTitle(QCoreApplication.translate("MainWindow", u"Ver", None))
-        self.lineEdit_ver_ventas.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Fecha del d\u00eda de las ventas", None))
+        self.lineEdit_ver_ventas.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Fecha del d\u00eda de las ventas (dd/mm/aaaa)", None))
         self.pushButton_ver_total_ventas.setText(QCoreApplication.translate("MainWindow", u"Ver total", None))
         self.pushButton_ver_ventas.setText(QCoreApplication.translate("MainWindow", u"Ver ventas", None))
         self.groupBox_5.setTitle(QCoreApplication.translate("MainWindow", u"Buscar y Eliminar", None))
@@ -737,15 +765,16 @@ class Ui_MainWindow(object):
         self.pushButton_buscar_ventas.setText(QCoreApplication.translate("MainWindow", u"Buscar venta", None))
         self.lineEdit_buscar_ventas.setPlaceholderText(QCoreApplication.translate("MainWindow", u"N\u00famero de la venta a buscar", None))
         self.groupBox_15.setTitle(QCoreApplication.translate("MainWindow", u"Buscar y Modificar", None))
+        self.lineEdit_fecha_modificar_ventas.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Fecha de la venta a modificar (dd/mm/aaaa)", None))
         self.lineEdit_cantidad_modificar_ventas.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Cantidad vendida a modificar", None))
         self.lineEdit_agregar_modificar_ventas.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Producto de la venta a modificar", None))
-        self.lineEdit_fecha_modificar_ventas.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Fecha de la venta a modificar", None))
         self.pushButton_modificar_ventas.setText(QCoreApplication.translate("MainWindow", u"Modificar venta", None))
         self.pushButton_buscar_modificar_ventas.setText(QCoreApplication.translate("MainWindow", u"Buscar venta", None))
+        self.lineEdit_buscar_modificar_ventas.setPlaceholderText(QCoreApplication.translate("MainWindow", u"N\u00famero de la venta a buscar", None))
         self.groupBox_6.setTitle(QCoreApplication.translate("MainWindow", u"Agregar", None))
         self.lineEdit_cantidad_ventas.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Cantidad vendida", None))
         self.lineEdit_agregar_ventas.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Nombre del producto vendido", None))
-        self.lineEdit_fecha_ventas.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Fecha de la venta", None))
+        self.lineEdit_fecha_ventas.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Fecha de la venta (dd/mm/aaaa)", None))
         self.pushButton_agregar_ventas.setText(QCoreApplication.translate("MainWindow", u"Agregar venta", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), QCoreApplication.translate("MainWindow", u"Ventas", None))
     # retranslateUi
